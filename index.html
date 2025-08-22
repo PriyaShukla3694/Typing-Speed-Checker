@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboTypist - Advanced Typing Speed Tester</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-switcher fade-in">
+        <button class="theme-btn theme-light" onclick="setTheme('light')" title="Light Theme"></button>
+        <button class="theme-btn theme-dark" onclick="setTheme('dark')" title="Dark Theme"></button>
+        <button class="theme-btn theme-purple" onclick="setTheme('purple')" title="Purple Theme"></button>
+    </div>
+
+    <div class="container">
+        <header class="header fade-in">
+            <h1><i class="fas fa-keyboard"></i> TypeMaster Pro</h1>
+            <p>Master your typing skills with our advanced speed tester</p>
+        </header>
+
+        <div class="user-panel fade-in">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <div id="user-name">Guest User</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8;">Welcome back!</div>
+                </div>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary" onclick="openModal('loginModal')">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+                <button class="btn btn-primary" onclick="openModal('registerModal')">
+                    <i class="fas fa-user-plus"></i> Register
+                </button>
+            </div>
+        </div>
+
+        <main class="dashboard fade-in">
+            <div class="test-config">
+                <div class="config-group">
+                    <label for="timer-select">
+                        <i class="fas fa-clock"></i> Test Duration
+                    </label>
+                    <select id="timer-select">
+                        <option value="60">1 Minute</option>
+                        <option value="120">2 Minutes</option>
+                        <option value="180">3 Minutes</option>
+                    </select>
+                </div>
+                <div class="config-group">
+                    <label for="category-select">
+                        <i class="fas fa-book"></i> Quote Category
+                    </label>
+                    <select id="category-select">
+                        <option value="motivation">Motivation</option>
+                        <option value="wisdom">Wisdom</option>
+                        <option value="technology">Technology</option>
+                        <option value="literature">Literature</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="timer-display">
+                <div class="timer-circle" id="timer-circle">
+                    <span id="timer-text">1:00</span>
+                </div>
+                <button class="btn btn-primary" id="start-btn" onclick="startTest()">
+                    <i class="fas fa-play"></i> Start Test
+                </button>
+            </div>
+
+            <div class="typing-container">
+                <div class="quote-display">
+                    <div class="quote-text" id="quote-text">
+                        Select your preferences above and click "Start Test" to begin your typing challenge!
+                    </div>
+                </div>
+                <textarea 
+                    class="typing-input" 
+                    id="typing-input" 
+                    placeholder="The text will appear above. Start typing to overwrite the dotted letters..." 
+                    disabled
+                    rows="4"
+                    spellcheck="false"
+                    autocomplete="off"
+                    autocorrect="off"
+                ></textarea>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value" id="wpm-stat">0</span>
+                    <span class="stat-label">WPM</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="accuracy-stat">0%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="errors-stat">0</span>
+                    <span class="stat-label">Errors</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value" id="chars-stat">0</span>
+                    <span class="stat-label">Characters</span>
+                </div>
+            </div>
+        </main>
+
+        <section class="leaderboard fade-in">
+            <h3><i class="fas fa-trophy"></i> Leaderboard</h3>
+            <div class="leaderboard-filters">
+                <button class="filter-btn active" onclick="filterLeaderboard('wpm')">Best WPM</button>
+                <button class="filter-btn" onclick="filterLeaderboard('accuracy')">Most Accurate</button>
+                <button class="filter-btn" onclick="filterLeaderboard('recent')">Recent Scores</button>
+            </div>
+            <div id="leaderboard-entries">
+                <!-- Leaderboard entries will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="faq-section fade-in">
+            <h3><i class="fas fa-question-circle"></i> Typing Tips & FAQ</h3>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What's the proper typing posture?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Sit up straight, keep your feet flat on the floor, position your wrists slightly above the keyboard, and maintain a comfortable distance from the screen. Your fingers should be curved and relaxed on the home row keys.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How can I improve my typing speed?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Practice daily for 10-15 minutes, focus on accuracy before speed, use all fingers with proper posture, and maintain a consistent rhythm. Start slowly and gradually increase your speed as muscle memory develops.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What's a good typing speed?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    The average typing speed is 35-40 WPM. Professional typists usually type 65-75 WPM, while competitive typists can exceed 100 WPM. Focus on accuracy first - 95% accuracy or higher is ideal.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    How is WPM calculated?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Words Per Minute (WPM) is calculated by dividing the total characters typed (including spaces) by 5, then dividing by the time in minutes. This gives a standardized measure regardless of word length.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login to Your Account</h3>
+                <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create New Account</h3>
+                <button class="modal-close" onclick="closeModal('registerModal')">&times;</button>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-user-plus"></i> Register
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

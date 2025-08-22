@@ -95,20 +95,20 @@ npx serve .
 ##**Contributing**
 Contributions are welcome! Here's how you can help:
 
-**1. Fork the Project**
-**2. Create a Feature Branch**
+1.**Fork the Project**
+2.**Create a Feature Branch**
 '''bash
     git checkout -b feature/amazing-feature'''
 
-**3. Commit Your Changes**
+3.**Commit Your Changes**
 '''bash
     git commit -m 'Add some amazing feature'''
 
-**4. Push to the Branch**
+4.**Push to the Branch**
 '''bash
    git push origin feature/amazing-feature'''
 
-**5. Open a Pull Request**
+5.**Open a Pull Request**
 
 ##**Development Guidelines**
 -Follow consistent code formatting

@@ -36,6 +36,7 @@ Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
 
  **1. Prerequisites**
 -Modern web browser (Chrome, Firefox, Safari, Edge)
+
 -Web server (for local development) or static hosting service
 
  **2. Local Setup**
@@ -75,11 +76,12 @@ npx serve .
 **4. Keyboard Shortcuts**
 
 -Escape: Reset the current test
+
 -Tab: Focus on the typing area (if supported)
 
-## **Technical Details**
+##**Technical Details**
 
-##**Built With**
+**Built With**
 
 **-HTML5:** Semantic structure with accessibility features
 
@@ -105,27 +107,36 @@ npx serve .
 
 ##**Browser Compatibility**
 
--Chrome 60+
--Firefox 55+
--Safari 12+
--Edge 79+
+-Chrome: 60+
+
+-Firefox: 55+
+
+-Safari: 12+
+
+-Edge: 79+
 
 ##**File Structure**
 '''typemaster-pro/
 ├── index.html              // Main HTML structure
+
 ├── css/
 │   └── styles.css          // Complete stylesheet with themes and animations
+
 ├── js/
 │   └── app.js              // Main application logic and functionality
+
 ├── assets/
 │   └── screenshots/        // Project screenshots
+
 ├── README.md               // This documentation file
+
 └── LICENSE                 // MIT License file'''
 
 
 ##**Contributing**
 
 Contributions are welcome! Here's how you can help:
+
 1.**Fork the Project**
 
 2.**Create a Feature Branch**
@@ -181,6 +192,7 @@ Acknowledgments
 ##**Text samples sourced from public domain literature**
 
 Inspired by popular typing test websites
+
 Thanks to all contributors and testers
 
 ##**Author**

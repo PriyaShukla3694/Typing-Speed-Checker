@@ -3,8 +3,8 @@ A modern, feature-rich web application that measures your typing speed and accur
 
 ## **Features**
 
--**Real-time Speed Calculation:** Live WPM and accuracy tracking as you type
--**Multiple Themes:** Light, dark, and purple theme options with animated gradients
+**-Real-time Speed Calculation:** Live WPM and accuracy tracking as you type
+**-Multiple Themes:** Light, dark, and purple theme options with animated gradients
 -**User Authentication:** Login/register system with personalized experience
 -**Interactive Leaderboard:** Track top performers with filtering options
 -**Quote Categories:** Choose from motivation, wisdom, technology, and literature passages
@@ -18,7 +18,8 @@ A modern, feature-rich web application that measures your typing speed and accur
 
 ## **Demo**
 Show Image
-Live demo: [Add your deployment URL here]
+Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
+
 
 ## **Installation**
 

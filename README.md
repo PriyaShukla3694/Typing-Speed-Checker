@@ -28,7 +28,6 @@ A modern, feature-rich web application that measures your typing speed and accur
 -**Smooth Animations:** Gradient backgrounds, hover effects, and state transitions
 
 ## **Demo**
-Show Image
 Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
 
 
@@ -56,9 +55,13 @@ Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
 
 '''bash
 // Using Python
+
 python -m http.server 8000
+
 // Using Node.js
-npx serve .
+
+npx serve
+
 // Or simply open index.html in your browser'''
 
 **-Visit http://localhost:8000 in your browser**
@@ -128,13 +131,16 @@ npx serve .
 ├── index.html              // Main HTML structure
 
 ├── css/
-│   └── styles.css          // Complete stylesheet with themes and animations
+
+│                    └── styles.css          // Complete stylesheet with themes and animations
 
 ├── js/
-│   └── app.js              // Main application logic and functionality
+
+│                      └── app.js              // Main application logic and functionality
 
 ├── assets/
-│   └── screenshots/        // Project screenshots
+
+│   └               ── screenshots/        // Project screenshots
 
 ├── README.md               // This documentation file
 

@@ -34,20 +34,21 @@ Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
 
 ## **Installation**
 
-## **Prerequisites**
+ **1. Prerequisites**
 -Modern web browser (Chrome, Firefox, Safari, Edge)
 -Web server (for local development) or static hosting service
 
-## **Local Setup**
-1. Clone the repository:
+ **2. Local Setup**
+ 
+**- Clone the repository:**
 '''bash
    git clone https://github.com/yourusername/typing-speed-checker.git'''
 
-2. Navigate to theproject directory:
+**- Navigate to theproject directory:**
 '''bash
    cd typing-speed-checker'''
 
-3. Open with a local server:
+**- Open with a local server:**
 '''bash
 // Using Python
 python -m http.server 8000
@@ -55,23 +56,23 @@ python -m http.server 8000
 npx serve .
 // Or simply open index.html in your browser'''
 
-4.Visit http://localhost:8000 in your browser
+**-Visit http://localhost:8000 in your browser**
 
-## **Usage**
+ **3. Usage**
 
-**1. Start the Test:** Click on the text area or press any key to begin
+**- Start the Test:** Click on the text area or press any key to begin
 
-**2. Type the Text:** Begin typing the displayed passage
+**- Type the Text:** Begin typing the displayed passage
 
-**3. Real-time Feedback:** Watch your WPM, accuracy, and progress update live
+**- Real-time Feedback:** Watch your WPM, accuracy, and progress update live
 
-**4. Complete the Test:** Finish typing the entire passage
+**- Complete the Test:** Finish typing the entire passage
 
-**5. View Results:** See your final statistics and performance summary
+**- View Results:** See your final statistics and performance summary
 
-**6. Try Again:** Click reset to start a new test
+**- Try Again:** Click reset to start a new test
 
-##**Keyboard Shortcuts**
+**4. Keyboard Shortcuts**
 
 -Escape: Reset the current test
 -Tab: Focus on the typing area (if supported)

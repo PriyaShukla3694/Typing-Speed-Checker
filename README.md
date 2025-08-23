@@ -4,16 +4,27 @@ A modern, feature-rich web application that measures your typing speed and accur
 ## **Features**
 
 **-Real-time Speed Calculation:** Live WPM and accuracy tracking as you type
+
 **-Multiple Themes:** Light, dark, and purple theme options with animated gradients
+
 -**User Authentication:** Login/register system with personalized experience
+
 -**Interactive Leaderboard:** Track top performers with filtering options
+
 -**Quote Categories:** Choose from motivation, wisdom, technology, and literature passages
+
 -**Visual Feedback:** Color-coded text showing correct/incorrect characters with smooth animations
+
 -**Timer Variants:** 1, 2, or 3-minute test durations
+
 -**Progress Tracking:** Real-time progress bar and circular timer display
+
 -**Comprehensive Stats:** WPM, accuracy percentage, error count, and character count
+
 -**FAQ Section:** Built-in typing tips and expandable help content
+
 -**Responsive Design:** Optimized for all devices with mobile-first approach
+
 -**Smooth Animations:** Gradient backgrounds, hover effects, and state transitions
 
 ## **Demo**
@@ -38,44 +49,61 @@ Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
 
 3. Open with a local server:
 '''bash
-# Using Python
+// Using Python
 python -m http.server 8000
-# Using Node.js
+// Using Node.js
 npx serve .
-# Or simply open index.html in your browser'''
+// Or simply open index.html in your browser'''
 
 4.Visit http://localhost:8000 in your browser
 
 ## **Usage**
 
 **1. Start the Test:** Click on the text area or press any key to begin
+
 **2. Type the Text:** Begin typing the displayed passage
+
 **3. Real-time Feedback:** Watch your WPM, accuracy, and progress update live
+
 **4. Complete the Test:** Finish typing the entire passage
+
 **5. View Results:** See your final statistics and performance summary
+
 **6. Try Again:** Click reset to start a new test
 
 ##**Keyboard Shortcuts**
+
 -Escape: Reset the current test
 -Tab: Focus on the typing area (if supported)
 
 ## **Technical Details**
 
 ##**Built With**
+
 **-HTML5:** Semantic structure with accessibility features
+
 **-CSS3:** Modern styling with CSS Grid, Flexbox, animations, and CSS variables
+
 **-Vanilla JavaScript:** Core functionality with ES6+ features
+
 **-Font Awesome 6.4.0:** Icon library for enhanced UI elements
 
 ##**Key Features**
+
 **-Animated Gradient Background:** Dynamic color-shifting background
+
 **-Theme System:** CSS variable-based theming with three preset options
+
 **-Real-time Character Tracking:** Individual character state management
+
 **-Timer Management:** Circular progress indicator with countdown
+
 **-Quote Database:** Categorized text samples for varied practice
+
 **-Statistics Engine:** Live calculation of WPM, accuracy, and error metrics
 
 ##**Browser Compatibility**
+
 -Chrome 60+
 -Firefox 55+
 -Safari 12+
@@ -83,60 +111,79 @@ npx serve .
 
 ##**File Structure**
 '''typemaster-pro/
-├── index.html              # Main HTML structure
+├── index.html              // Main HTML structure
 ├── css/
-│   └── styles.css          # Complete stylesheet with themes and animations
+│   └── styles.css          // Complete stylesheet with themes and animations
 ├── js/
-│   └── app.js              # Main application logic and functionality
+│   └── app.js              // Main application logic and functionality
 ├── assets/
-│   └── screenshots/        # Project screenshots
-├── README.md               # This documentation file
-└── LICENSE                 # MIT License file'''
+│   └── screenshots/        // Project screenshots
+├── README.md               // This documentation file
+└── LICENSE                 // MIT License file'''
+
 
 ##**Contributing**
-Contributions are welcome! Here's how you can help:
 
+Contributions are welcome! Here's how you can help:
 1.**Fork the Project**
+
 2.**Create a Feature Branch**
+
 '''bash
     git checkout -b feature/amazing-feature'''
 
 3.**Commit Your Changes**
+
 '''bash
     git commit -m 'Add some amazing feature'''
 
 4.**Push to the Branch**
+
 '''bash
    git push origin feature/amazing-feature'''
 
 5.**Open a Pull Request**
 
 ##**Development Guidelines**
+
 -Follow consistent code formatting
+
 -Add comments for complex logic
+
 -Test on multiple browsers
+
 -Update documentation for new features
 
 ##**Roadmap**
 
  -Multiple difficulty levels
+ 
  -User accounts and progress tracking
+ 
  -Typing lessons and tutorials
+ 
  -Multiplayer racing mode
+ 
  -Custom text import
+ 
  -Detailed analytics and charts
+ 
  -Keyboard heatmap visualization
+ 
  -Dark/light theme toggle
 
 ##**License**
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 Acknowledgments
 
 ##**Text samples sourced from public domain literature**
+
 Inspired by popular typing test websites
 Thanks to all contributors and testers
 
 ##**Author**
+
 **Priya Shukla**
 
 GitHub: @PriyaShukla3694

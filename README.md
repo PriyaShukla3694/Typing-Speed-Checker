@@ -35,6 +35,7 @@ Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
 ## **Installation**
 
  **1. Prerequisites**
+ 
 -Modern web browser (Chrome, Firefox, Safari, Edge)
 
 -Web server (for local development) or static hosting service
@@ -42,14 +43,17 @@ Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
  **2. Local Setup**
  
 **- Clone the repository:**
+
 '''bash
    git clone https://github.com/yourusername/typing-speed-checker.git'''
 
 **- Navigate to theproject directory:**
+
 '''bash
    cd typing-speed-checker'''
 
 **- Open with a local server:**
+
 '''bash
 // Using Python
 python -m http.server 8000
@@ -79,7 +83,7 @@ npx serve .
 
 -Tab: Focus on the typing area (if supported)
 
-##**Technical Details**
+## **Technical Details**
 
 **Built With**
 
@@ -91,7 +95,8 @@ npx serve .
 
 **-Font Awesome 6.4.0:** Icon library for enhanced UI elements
 
-##**Key Features**
+
+## **Key Features**
 
 **-Animated Gradient Background:** Dynamic color-shifting background
 
@@ -105,7 +110,9 @@ npx serve .
 
 **-Statistics Engine:** Live calculation of WPM, accuracy, and error metrics
 
-##**Browser Compatibility**
+
+## **Browser Compatibility**
+
 
 -Chrome: 60+
 
@@ -115,7 +122,8 @@ npx serve .
 
 -Edge: 79+
 
-##**File Structure**
+## **File Structure**
+
 '''typemaster-pro/
 ├── index.html              // Main HTML structure
 
@@ -133,7 +141,7 @@ npx serve .
 └── LICENSE                 // MIT License file'''
 
 
-##**Contributing**
+## **Contributing**
 
 Contributions are welcome! Here's how you can help:
 
@@ -156,7 +164,7 @@ Contributions are welcome! Here's how you can help:
 
 5.**Open a Pull Request**
 
-##**Development Guidelines**
+## **Development Guidelines**
 
 -Follow consistent code formatting
 
@@ -166,7 +174,7 @@ Contributions are welcome! Here's how you can help:
 
 -Update documentation for new features
 
-##**Roadmap**
+## **Roadmap**
 
  -Multiple difficulty levels
  
@@ -184,22 +192,23 @@ Contributions are welcome! Here's how you can help:
  
  -Dark/light theme toggle
 
-##**License**
+## **License**
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 Acknowledgments
 
-##**Text samples sourced from public domain literature**
+## **Text samples sourced from public domain literature**
 
 Inspired by popular typing test websites
 
 Thanks to all contributors and testers
 
-##**Author**
+## **Author**
 
 **Priya Shukla**
 
 GitHub: @PriyaShukla3694
+
 LinkedIn: https://www.linkedin.com/in/priya-shukla-37b79333a
 
 

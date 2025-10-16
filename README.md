@@ -28,7 +28,7 @@ A modern, feature-rich web application that measures your typing speed and accur
 -**Smooth Animations:** Gradient backgrounds, hover effects, and state transitions
 
 ## **Demo**
-Live demo: (https://PriyaShukla3694.github.io/typing-speed-checker/)
+[Live demo:] (https://priyashukla3694.github.io/Typing-Speed-Checker/)
 
 
 ## **Installation**

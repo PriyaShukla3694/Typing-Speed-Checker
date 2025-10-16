@@ -43,17 +43,17 @@ A modern, feature-rich web application that measures your typing speed and accur
  
 **- Clone the repository:**
 
-```bash
-   git clone (https://github.com/PriyaShukla3694/Typing-Speed-Checker)```
+bash
+   git clone (https://github.com/PriyaShukla3694/Typing-Speed-Checker)
 
 **- Navigate to theproject directory:**
 
-```bash
+bash
    cd typing-speed-checker```
 
 **- Open with a local server:**
 
-```bash
+bash
 // Using Python
 
 python -m http.server 8000
@@ -127,7 +127,7 @@ npx serve
 
 ## **File Structure**
 
-```typemaster-pro/
+typemaster-pro/
 ├── index.html              // Main HTML structure
 
 ├── css/
@@ -140,11 +140,11 @@ npx serve
 
 ├── assets/
 
-│   └               ── screenshots/        // Project screenshots
+└── screenshots/        // Project screenshots
 
 ├── README.md               // This documentation file
 
-└── LICENSE                 // MIT License file```
+└── LICENSE                 // MIT License file
 
 
 ## **Contributing**
@@ -155,18 +155,18 @@ Contributions are welcome! Here's how you can help:
 
 2.**Create a Feature Branch**
 
-```bash
-    git checkout -b feature/amazing-feature```
+bash
+    git checkout -b feature/amazing-feature
 
 3.**Commit Your Changes**
 
-'''bash
-    git commit -m 'Add some amazing feature```
+bash
+    git commit -m 'Add some amazing feature
 
 4.**Push to the Branch**
 
-```bash
-   git push origin feature/amazing-feature```
+bash
+   git push origin feature/amazing-feature
 
 5.**Open a Pull Request**
 

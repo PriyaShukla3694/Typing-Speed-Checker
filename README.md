@@ -44,7 +44,7 @@ A modern, feature-rich web application that measures your typing speed and accur
 **- Clone the repository:**
 
 '''bash
-   git clone https://github.com/yourusername/typing-speed-checker.git'''
+   git clone (https://github.com/PriyaShukla3694/Typing-Speed-Checker)'''
 
 **- Navigate to theproject directory:**
 

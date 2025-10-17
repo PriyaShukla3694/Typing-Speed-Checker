@@ -136,10 +136,8 @@ npx serve
          └── styles.css          // Complete stylesheet with themes and animations
 ├── js/
          └── app.js              // Main application logic and functionality
-├── assets/
-         └── screenshots/        // Project screenshots
 ├── README.md               // This documentation file
-         └── LICENSE                 // MIT License file
+├── LICENSE                 // MIT License file
 ```
 
 
